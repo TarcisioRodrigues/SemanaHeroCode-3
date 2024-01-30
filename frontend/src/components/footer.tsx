@@ -7,7 +7,7 @@ import {
   NoComputer,
   NoMic,
   Phone,
-} from '@/Icons';
+} from '@/Icon';
 import { useState } from 'react';
 import {Container} from './container';
 
