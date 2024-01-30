@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 export const Chat=()=> {
-  return (
-    <div className="   bg-gray-900 px-4 pt-4 md:w-[15%] hidden md:flex rounded-md m-3 h-full">
+    return (
+    <div className="   bg-gray-900 px-4 pt-4 md:w-[35%] hidden md:flex rounded-md m-3 h-[50]">
       <div className="relative h-full w-full">
         <div className="bg-gray-950 rounded p-2">
           <div className="flex items-center text-pink-400 space-x-2">
@@ -34,4 +34,5 @@ export const Chat=()=> {
       </div>
     </div>
   );
+
 }
