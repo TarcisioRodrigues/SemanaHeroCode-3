@@ -1,16 +1,22 @@
-import {ForwardRefRenderFunction,forwardRef} from 'react'
-interface IInput{
-    placeholder:string,
-    type:string
+import { ForwardRefRenderFunction, forwardRef } from 'react';
+interface IInput {
+  placeholder: string;
+  type: string;
 }
-export const InputBase:ForwardRefRenderFunction<HTMLInputElement,IInput> =({placeholder,type,...rest},ref)=>{
-return(
-    <div className='w-full'>
-        <label >
-            <input type={type} placeholder={placeholder} ref={ref} {...rest} className='px-3 py-2 bg-gray-900 rounded-md w-full' />
-        </label>
+ const InputBase: ForwardRefRenderFunction<HTMLInputElement, IInput> = (
+  { placeholder, type, ...rest },
+  ref,
+) => {
+  return (
+    <div className="w-full">
+      <input
+        type={type}
+        placeholder={placeholder}
+        ref={ref}
+        {...rest}
+        className="px-3 py-2 bg-gray-950 rounded-md w-full"
+      />
     </div>
-)
-}
-
-export const Input=forwardRef(InputBase)
+  );
+};
+export const Input = forwardRef(InputBase);
