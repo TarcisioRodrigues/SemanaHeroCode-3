@@ -12,7 +12,7 @@ export function SocketProvider({ children }: { children: ReactNode }) {
   const [socket, setSocket] = useState<Socket | null>(null);
 
   useEffect(() => {
-    const newSocket = io(`${process.env.NEXT_PUBLIC_API_URL}/streams`, {
+    const newSocket = io(`http://localhost:3333/streams`, {
       transports: ['websocket'],
     });
     setSocket(newSocket);
